@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LibrasCode: aprenda programação com conceitos simples, slides, quiz e apoio visual para pessoas surdas.">
+  <title>LibrasCode | Programação para todos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="LibrasCode, voltar ao início">
+        <span class="brand-mark" aria-hidden="true"><span>&lt;/&gt;</span></span>
+        <span class="brand-name">Libras<span>Code</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#conceitos">Conceitos</a>
+        <a href="#libras">Libras</a>
+        <a href="#tarefas">Tarefas</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#dicas">Dicas</a>
+      </nav>
+
+      <div class="accessibility-tools" aria-label="Ferramentas de acessibilidade">
+        <button class="tool-button" id="font-toggle" type="button" aria-pressed="false">
+          <span aria-hidden="true">Aa</span> Texto maior
+        </button>
+        <button class="tool-button" id="contrast-toggle" type="button" aria-pressed="false">
+          <span aria-hidden="true">◐</span> Alto contraste
+        </button>
+        <button class="tool-button" id="reading-toggle" type="button" aria-pressed="false">
+          <span aria-hidden="true">▤</span> Modo foco
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Aprender também é comunicar</p>
+          <h1 id="hero-title">Programação com as mãos, olhos e <span>ideias.</span></h1>
+          <p class="hero-text">Um espaço de aprendizagem multimodal: veja o conceito, leia uma explicação curta, acompanhe o roteiro em Libras e pratique com uma tarefa pequena.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#slides">Explorar os slides <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#quiz">Testar meus conhecimentos</a>
+          </div>
+          <div class="hero-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Conteúdo visual + legenda + texto simples · HTML, CSS e JavaScript</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Ilustração com uma tela de código e uma janela para Libras">
+          <div class="visual-card visual-card-main">
+            <div class="window-bar">
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span class="window-title">primeiro-programa.js</span>
+              <span class="window-number">01</span>
+            </div>
+            <div class="code-window" aria-label="Exemplo de código JavaScript">
+              <p><span class="line-number">01</span> <span class="code-purple">const</span> <span class="code-yellow">nome</span> = <span class="code-green">"Lia"</span>;</p>
+              <p><span class="line-number">02</span> <span class="code-purple">if</span> (<span class="code-yellow">nome</span>) {</p>
+              <p><span class="line-number">03</span>&nbsp;&nbsp; <span class="code-blue">console</span>.log(</p>
+              <p><span class="line-number">04</span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="code-green">"Olá, "</span> + <span class="code-yellow">nome</span></p>
+              <p><span class="line-number">05</span>&nbsp;&nbsp; );</p>
+              <p><span class="line-number">06</span> }</p>
+            </div>
+            <div class="visual-caption">
+              <span class="caption-icon" aria-hidden="true">✦</span>
+              <span>Uma linha de cada vez.</span>
+            </div>
+          </div>
+          <div class="visual-card sign-card">
+            <div class="sign-card-head"><span class="live-indicator"></span> Espaço Libras</div>
+            <div class="sign-illustration" aria-hidden="true"><span class="sign-letter">L</span><span class="sign-spark spark-one">+</span><span class="sign-spark spark-two">•</span></div>
+            <div class="sign-card-text"><strong>Conceito visual</strong><span>Variável = uma caixa que guarda informação</span></div>
+          </div>
+          <div class="floating-chip chip-top"><span aria-hidden="true">✓</span> passo a passo</div>
+          <div class="floating-chip chip-bottom"><span aria-hidden="true">⌁</span> sem complicação</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section" aria-label="Resumo do conteúdo">
+      <div class="container stats-grid">
+        <div class="stat-item"><strong>04</strong><span>conceitos<br>básicos</span></div>
+        <div class="stat-item"><strong>06</strong><span>slides<br>visuais</span></div>
+        <div class="stat-item"><strong>05</strong><span>perguntas<br>no quiz</span></div>
+        <div class="stat-item stat-highlight"><strong>100%</strong><span>feito para<br>começar</span></div>
+      </div>
+    </section>
+
+    <section class="section learn-section" aria-labelledby="learn-title">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span>Seu caminho de aprendizagem</p>
+            <h2 id="learn-title">Comece pequeno.<br><span>Entenda de verdade.</span></h2>
+          </div>
+          <p class="heading-description">Você não precisa saber tudo para começar. Escolha um caminho, veja os exemplos e pratique no seu ritmo.</p>
+        </div>
+        <div class="path-grid">
+          <a class="path-card path-card-dark" href="#conceitos">
+            <span class="card-index">01</span>
+            <div class="card-icon icon-brackets" aria-hidden="true">{ }</div>
+            <h3>Conceitos básicos</h3>
+            <p>As primeiras peças para entender como os programas pensam.</p>
+            <span class="card-link">Ver conceitos <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="path-card path-card-yellow" href="#slides">
+            <span class="card-index">02</span>
+            <div class="card-icon icon-slides" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Slides visuais</h3>
+            <p>Aprenda uma ideia por vez com exemplos curtos e claros.</p>
+            <span class="card-link">Abrir slides <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="path-card path-card-blue" href="#quiz">
+            <span class="card-index">03</span>
+            <div class="card-icon icon-check" aria-hidden="true">✓</div>
+            <h3>Quiz de prática</h3>
+            <p>Confira o que você já entendeu e descubra seu próximo passo.</p>
+            <span class="card-link">Começar quiz <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section concepts-section" id="conceitos" aria-labelledby="concepts-title">
+      <div class="container">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span>O vocabulário inicial</p>
+          <h2 id="concepts-title">Quatro ideias para<br><span>desbloquear a programação.</span></h2>
+          <p>Programar é organizar instruções para que o computador faça algo. Estas são as primeiras palavras que você vai encontrar.</p>
+        </div>
+        <div class="concept-grid">
+          <article class="concept-card">
+            <div class="concept-top"><span class="concept-number">01</span><span class="concept-symbol" aria-hidden="true">→</span></div>
+            <h3>Algoritmo</h3>
+            <p>Uma sequência de passos para resolver um problema. Como uma receita, mas para dar instruções ao computador.</p>
+            <div class="mini-example"><span>começo</span><i></i><span>passos</span><i></i><span>resultado</span></div>
+            <button class="text-button demo-toggle" type="button" aria-expanded="false">Roteiro em Libras <span aria-hidden="true">+</span></button>
+            <div class="demo-script" hidden><strong>Ideia para sinalizar:</strong> mostre “começo”, faça movimentos de sequência e finalize apontando para o resultado.</div>
+          </article>
+          <article class="concept-card concept-card-featured">
+            <div class="concept-top"><span class="concept-number">02</span><span class="concept-symbol" aria-hidden="true">□</span></div>
+            <h3>Variável</h3>
+            <p>Uma caixa com nome que guarda uma informação. O valor pode mudar durante o programa.</p>
+            <div class="variable-example"><span class="box-label">idade</span><span class="box-value">15</span><span class="box-arrow">→</span><span class="box-label">nome</span><span class="box-value">Lia</span></div>
+            <button class="text-button demo-toggle" type="button" aria-expanded="false">Roteiro em Libras <span aria-hidden="true">+</span></button>
+            <div class="demo-script" hidden><strong>Ideia para sinalizar:</strong> faça o gesto de guardar algo em uma caixa e depois mostre que o conteúdo pode trocar.</div>
+          </article>
+          <article class="concept-card">
+            <div class="concept-top"><span class="concept-number">03</span><span class="concept-symbol" aria-hidden="true">?</span></div>
+            <h3>Condição</h3>
+            <p>Uma pergunta que ajuda o programa a escolher: se algo acontecer, faça isso; caso contrário, faça aquilo.</p>
+            <div class="condition-example"><span class="condition-if">SE</span><span>chuva</span><span class="condition-arrow">→</span><span>guarda-chuva</span></div>
+            <button class="text-button demo-toggle" type="button" aria-expanded="false">Roteiro em Libras <span aria-hidden="true">+</span></button>
+            <div class="demo-script" hidden><strong>Ideia para sinalizar:</strong> faça uma expressão de pergunta, sinalize a escolha e mostre dois caminhos possíveis.</div>
+          </article>
+          <article class="concept-card">
+            <div class="concept-top"><span class="concept-number">04</span><span class="concept-symbol" aria-hidden="true">↻</span></div>
+            <h3>Repetição</h3>
+            <p>Quando o programa repete uma tarefa várias vezes sem você precisar escrever a mesma instrução de novo.</p>
+            <div class="repeat-example"><span>1</span><span>2</span><span>3</span><span>...</span><span class="repeat-loop">↻</span></div>
+            <button class="text-button demo-toggle" type="button" aria-expanded="false">Roteiro em Libras <span aria-hidden="true">+</span></button>
+            <div class="demo-script" hidden><strong>Ideia para sinalizar:</strong> repita o mesmo movimento três vezes e desenhe um círculo no ar para mostrar o ciclo.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section libras-section" id="libras" aria-labelledby="libras-title">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span>Libras em primeiro lugar</p>
+            <h2 id="libras-title">Veja. Leia.<br><span>Conecte as ideias.</span></h2>
+          </div>
+          <p class="heading-description">Cada aula deve ter três caminhos: vídeo em Libras, legenda sincronizada e uma explicação escrita curta. Assim, a pessoa escolhe como prefere aprender.</p>
+        </div>
+
+        <div class="accessibility-note" role="note">
+          <span class="accessibility-note-icon" aria-hidden="true">L</span>
+          <div><strong>Importante para o trabalho escolar</strong><p>Os quadros abaixo estão prontos para receber vídeos reais em Libras. Para publicar sinais corretos, grave ou revise os vídeos com uma pessoa surda ou intérprete fluente. Um texto automático não substitui a Libras.</p><p class="shortcut-line"><strong>Teclado:</strong> Alt+1 conceitos · Alt+2 Libras · Alt+3 tarefas · Alt+4 quiz</p></div>
+        </div>
+
+        <div class="libras-grid">
+          <article class="libras-card libras-card-main">
+            <div class="video-placeholder" role="img" aria-label="Espaço reservado para vídeo em Libras sobre algoritmo">
+              <div class="video-topbar"><span class="video-dot"></span><span>VÍDEO EM LIBRAS</span><span class="video-time">01:00</span></div>
+              <div class="video-stage"><span class="video-play" aria-hidden="true">▶</span><strong>Algoritmo</strong><span>adicione algoritmo-libras.mp4</span></div>
+              <div class="caption-strip"><span>[LEG]</span> Algoritmo é uma sequência de passos.</div>
+            </div>
+            <div class="libras-card-body"><div class="card-kicker">AULA 01 · CONCEITO</div><h3>Algoritmo em Libras</h3><p>Use este espaço para inserir um vídeo curto mostrando: ideia, sequência de passos e resultado.</p><button class="text-button transcript-toggle" type="button" aria-expanded="false">Abrir transcrição e roteiro <span aria-hidden="true">+</span></button><div class="transcript-box" hidden><strong>Transcrição/legenda:</strong> “Algoritmo é uma sequência de passos para alcançar um resultado.”<br><strong>Roteiro visual:</strong> 1. mostrar a ideia; 2. separar os passos; 3. apontar para o resultado.</div></div>
+          </article>
+          <article class="libras-card">
+            <div class="mini-video-visual mint-visual" aria-hidden="true"><span class="visual-hand">□</span><span class="motion-line motion-one"></span><span class="motion-line motion-two"></span></div>
+            <div class="libras-card-body"><div class="card-kicker">AULA 02 · VISUAL</div><h3>Variável é uma caixa</h3><p>Vídeo sugerido: sinalizar “nome”, mostrar uma caixa e trocar o valor de dentro.</p><button class="text-button transcript-toggle" type="button" aria-expanded="false">Ver legenda fácil <span aria-hidden="true">+</span></button><div class="transcript-box" hidden><strong>Legenda:</strong> “A variável tem um nome e guarda um valor que pode mudar.”<br><strong>Roteiro Libras:</strong> nome → caixa → informação → troca.</div></div>
+          </article>
+          <article class="libras-card">
+            <div class="mini-video-visual blue-visual" aria-hidden="true"><span class="visual-question">?</span><span class="choice-arrow">↙</span><span class="choice-arrow second-arrow">↘</span></div>
+            <div class="libras-card-body"><div class="card-kicker">AULA 03 · ESCOLHA</div><h3>Condição é decidir</h3><p>Vídeo sugerido: fazer uma pergunta e mostrar dois caminhos, “sim” e “não”.</p><button class="text-button transcript-toggle" type="button" aria-expanded="false">Ver legenda fácil <span aria-hidden="true">+</span></button><div class="transcript-box" hidden><strong>Legenda:</strong> “Se a condição for verdadeira, siga o caminho A. Caso contrário, siga o caminho B.”<br><strong>Roteiro Libras:</strong> pergunta → sim/não → dois caminhos.</div></div>
+          </article>
+        </div>
+
+        <div class="libras-checklist" aria-label="Checklist para um bom vídeo em Libras"><span class="checklist-title">Checklist do vídeo</span><span>☑ pessoa bem iluminada</span><span>☑ mãos e rosto visíveis</span><span>☑ legenda revisada</span><span>☑ transcrição abaixo</span></div>
+      </div>
+    </section>
+
+    <section class="section slides-section" id="slides" aria-labelledby="slides-title">
+      <div class="container">
+        <div class="slides-shell">
+          <div class="slides-intro">
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span>Aprenda no seu ritmo</p>
+            <h2 id="slides-title">Uma ideia.<br><span>Um exemplo.</span></h2>
+            <p>Use os botões para avançar. Leia, observe o exemplo e tente explicar o conceito com suas próprias mãos.</p>
+            <div class="slide-progress-wrap"><div class="slide-progress-label"><span id="slide-counter">01 / 06</span><span>progresso</span></div><div class="slide-progress" aria-hidden="true"><span id="slide-progress-bar"></span></div></div>
+            <div class="slide-dots" id="slide-dots" aria-label="Selecionar slide"></div>
+          </div>
+          <div class="slide-stage" aria-live="polite">
+            <div class="slide-number-big" id="slide-number-big">01</div>
+            <div class="slide-content">
+              <span class="slide-tag" id="slide-tag">COMEÇO</span>
+              <h3 id="slide-title">O que é programar?</h3>
+              <p id="slide-text">Programar é escrever instruções organizadas para que o computador realize uma tarefa.</p>
+              <div class="slide-example-box">
+                <div class="example-label">EXEMPLO DO DIA A DIA</div>
+                <p id="slide-example">“Abrir a mochila → pegar o caderno → anotar a ideia.”</p>
+              </div>
+              <div class="slide-sign-tip"><span class="tip-mark" aria-hidden="true">L</span><p id="slide-sign">Em Libras: pense em uma sequência de sinais, como um caminho com começo, meio e fim.</p></div>
+            </div>
+            <div class="slide-controls"><button class="slide-button" id="prev-slide" type="button" aria-label="Voltar slide">← <span>Anterior</span></button><button class="slide-button slide-button-next" id="next-slide" type="button" aria-label="Avançar slide"><span>Próximo</span> →</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tasks-section" id="tarefas" aria-labelledby="tasks-title">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span>Laboratório de prática</p>
+            <h2 id="tasks-title">Pequenas tarefas.<br><span>Resultado na hora.</span></h2>
+          </div>
+          <p class="heading-description">Você pode alterar o código, clicar em executar e observar o resultado. O erro não tira pontos: ele mostra o que podemos revisar.</p>
+        </div>
+
+        <div class="task-guide" role="note"><span class="task-guide-number">01</span><div><strong>Como usar uma tarefa</strong><p>Leia o objetivo → altere uma parte → clique em executar → compare com a dica em Libras e texto simples.</p></div><span class="task-guide-arrow" aria-hidden="true">→</span></div>
+
+        <div class="task-grid">
+          <article class="task-card">
+            <div class="task-card-head"><span class="task-number">TAREFA 01</span><span class="task-level easy">COMEÇO</span></div>
+            <h3>Faça o computador falar</h3><p class="task-objective"><strong>Objetivo:</strong> usar <code>console.log()</code> para mostrar uma mensagem.</p>
+            <label for="task-hello-code">Seu código</label><textarea class="code-editor" id="task-hello-code" spellcheck="false" aria-describedby="hello-help">console.log("Olá, LibrasCode!");</textarea><div class="task-actions"><button class="button button-primary button-small run-task" type="button" data-task="hello">Executar <span aria-hidden="true">▶</span></button><button class="hint-button" type="button" aria-expanded="false" data-hint="hello">Dica visual +</button></div><div class="task-output" id="output-hello" aria-live="polite"><span class="output-label">SAÍDA</span><span class="output-text">Clique em executar para ver a mensagem.</span></div><div class="task-hint" id="hello-help" hidden><strong>Libras + texto:</strong> console.log significa “mostrar na tela”. Pense em apontar para uma mensagem que aparece.</div>
+          </article>
+
+          <article class="task-card task-card-blue">
+            <div class="task-card-head"><span class="task-number">TAREFA 02</span><span class="task-level medium">CAIXA</span></div>
+            <h3>Troque o nome</h3><p class="task-objective"><strong>Objetivo:</strong> guardar seu nome em uma variável e usar a informação.</p>
+            <label for="task-variable-code">Seu código</label><textarea class="code-editor" id="task-variable-code" spellcheck="false" aria-describedby="variable-help">let nome = "Lia";
+console.log("Olá, " + nome);</textarea><div class="task-actions"><button class="button button-primary button-small run-task" type="button" data-task="variable">Executar <span aria-hidden="true">▶</span></button><button class="hint-button" type="button" aria-expanded="false" data-hint="variable">Dica visual +</button></div><div class="task-output" id="output-variable" aria-live="polite"><span class="output-label">SAÍDA</span><span class="output-text">A variável vai aparecer aqui.</span></div><div class="task-hint" id="variable-help" hidden><strong>Libras + texto:</strong> variável é uma caixa com etiqueta. Troque apenas o que está entre aspas depois de <code>nome =</code>.</div>
+          </article>
+
+          <article class="task-card">
+            <div class="task-card-head"><span class="task-number">TAREFA 03</span><span class="task-level challenge">ESCOLHA</span></div>
+            <h3>O que levar?</h3><p class="task-objective"><strong>Objetivo:</strong> escolher uma resposta usando uma condição.</p>
+            <fieldset class="choice-fieldset"><legend>Como está o tempo?</legend><label><input type="radio" name="weather" value="sol" checked> Sol</label><label><input type="radio" name="weather" value="chuva"> Chuva</label></fieldset><div class="task-actions"><button class="button button-primary button-small run-task" type="button" data-task="condition">Ver decisão <span aria-hidden="true">▶</span></button><button class="hint-button" type="button" aria-expanded="false" data-hint="condition">Dica visual +</button></div><div class="task-output" id="output-condition" aria-live="polite"><span class="output-label">DECISÃO</span><span class="output-text">Escolha uma opção e execute.</span></div><div class="task-hint" id="condition-help" hidden><strong>Libras + texto:</strong> condição é uma pergunta com dois caminhos: se chover, leve guarda-chuva; senão, leve óculos de sol.</div>
+          </article>
+
+          <article class="task-card">
+            <div class="task-card-head"><span class="task-number">TAREFA 04</span><span class="task-level challenge">CICLO</span></div>
+            <h3>Repita uma ação</h3><p class="task-objective"><strong>Objetivo:</strong> observar uma repetição sem escrever tudo várias vezes.</p>
+            <label for="repeat-number">Quantas vezes?</label><input class="number-input" id="repeat-number" type="number" min="1" max="6" value="3"><div class="task-actions"><button class="button button-primary button-small run-task" type="button" data-task="loop">Repetir <span aria-hidden="true">▶</span></button><button class="hint-button" type="button" aria-expanded="false" data-hint="loop">Dica visual +</button></div><div class="task-output" id="output-loop" aria-live="polite"><span class="output-label">CICLO</span><span class="output-text">A repetição aparece aqui.</span></div><div class="task-hint" id="loop-help" hidden><strong>Libras + texto:</strong> mostre o mesmo movimento várias vezes. O número diz quantas repetições o computador deve fazer.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz" aria-labelledby="quiz-title">
+      <div class="container quiz-layout">
+        <div class="quiz-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Hora de experimentar</p>
+          <h2 id="quiz-title">Seu cérebro já está<br><span>pensando como código.</span></h2>
+          <p>Não é uma prova. É um jeito leve de perceber o que você já aprendeu. Responda, receba uma explicação e siga para a próxima.</p>
+          <div class="quiz-badge"><span aria-hidden="true">✦</span><div><strong>Feedback imediato</strong><span>Aprender com cada resposta</span></div></div>
+        </div>
+        <div class="quiz-card" id="quiz-card">
+          <div class="quiz-card-top"><span class="quiz-label">QUIZ LIBRASCODE</span><span id="quiz-progress">01 / 05</span></div>
+          <div class="quiz-progress"><span id="quiz-progress-bar"></span></div>
+          <div id="quiz-question-area">
+            <h3 id="quiz-question">Carregando pergunta...</h3>
+            <div class="quiz-options" id="quiz-options"></div>
+            <div class="quiz-feedback" id="quiz-feedback" aria-live="polite"></div>
+          </div>
+          <div class="quiz-actions"><button class="button button-primary button-small" id="quiz-next" type="button" disabled>Próxima pergunta <span aria-hidden="true">→</span></button><span class="quiz-score">Pontos: <strong id="quiz-score">0</strong></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tips-section" id="dicas" aria-labelledby="tips-title">
+      <div class="container tips-layout">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Para estudar melhor</p>
+          <h2 id="tips-title">Seu jeito de aprender<br><span>também é código.</span></h2>
+        </div>
+        <div class="tips-list">
+          <details open><summary><span class="tip-number">01</span><span>Aprenda uma coisa por vez</span><span class="summary-icon" aria-hidden="true">+</span></summary><p>Escolha um conceito, entenda o exemplo e só depois passe ao próximo. Pausas também fazem parte do aprendizado.</p></details>
+          <details><summary><span class="tip-number">02</span><span>Use o visual a seu favor</span><span class="summary-icon" aria-hidden="true">+</span></summary><p>Desenhe caixas para variáveis, setas para caminhos e círculos para repetições. O papel pode ser seu primeiro editor de código.</p></details>
+          <details><summary><span class="tip-number">03</span><span>Teste sem medo de errar</span><span class="summary-icon" aria-hidden="true">+</span></summary><p>O erro mostra onde está a próxima pista. Leia a mensagem, volte um passo e tente novamente.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="final-title">
+      <div class="container final-cta-inner">
+        <div class="final-mark" aria-hidden="true">{ }</div>
+        <div><p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span>O próximo passo é seu</p><h2 id="final-title">Toda pessoa pode<br><span>aprender a programar.</span></h2></div>
+        <a class="button button-light" href="#quiz">Fazer o quiz <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand brand-footer" href="#inicio"><span class="brand-mark" aria-hidden="true"><span>&lt;/&gt;</span></span><span class="brand-name">Libras<span>Code</span></span></a>
+      <p>Um projeto escolar para aprender programação com acessibilidade, clareza e criatividade.</p>
+      <p class="footer-credit">Feito com HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
